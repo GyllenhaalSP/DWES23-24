@@ -1,0 +1,22 @@
+*{
+    font-family: Inconsolata, sans-serif;
+}
+
+.fecha{
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+img{
+    width: 627px;
+    height: 419px;
+    margin: auto;
+    display: block;
+    opacity: 0;
+}
+
+blockquote{
+    font-size: 1.25em;
+    font-style: italic;
+    text-align: right;
+}
