@@ -1,0 +1,34 @@
+body {
+    background-color: beige;
+}
+
+ul {
+    margin: auto;
+}
+
+li {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+    border: black 2px solid;
+}
+
+div {
+    position: relative;
+    margin: 10px;
+    display: none;
+}
+
+#resultadoVisible {
+    display: none;
+}
