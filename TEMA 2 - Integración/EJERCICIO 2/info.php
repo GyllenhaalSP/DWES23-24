@@ -26,7 +26,6 @@ $pdfOutput = iconv('UTF-8', 'windows-1252', $pdfOutput);
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href="styles.css" rel="stylesheet">
     <title>CARTA DE PRESENTACIÓN</title>
-    <script src="main.js"></script>
 </head>
 <body>
 <div class="carta">
