@@ -9,9 +9,9 @@ function concatenarPalabras(...$palabras): string
     return trim($resultado);
 }
 
-function concatenaCon(&$cadena = " ", ...$palabras): void
+function concatenaCon(&$cadena = " ", ...$palabras): string
 {
-    $cadena .= " " . concatenarPalabras(implode(" ", $palabras));
+    return " " . concatenarPalabras(implode($cadena, $palabras));
 }
 
 $suma = function ($a, $b) {

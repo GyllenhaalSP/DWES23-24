@@ -23,8 +23,9 @@ require('funciones.php');
     <?php
     $cadena = concatenarPalabras("Hola", "que", "tal", "estas");
     echo $cadena . "<br>";
-    concatenaCon($cadena, "yo", "muy", "bien");
-    echo $cadena . "<br>";
+    $concatena = ", ";
+    echo concatenaCon($concatena, "yo", "muy", "bien");
+    echo "<br>";
     echo "3+4 es " . aplicarOperacion($suma, 3, 4) . "<br>";
     echo "3-4 es " . aplicarOperacion($resta, 3, 4) . "<br>";
     echo "3x4 es " . aplicarOperacion($multiplicacion, 3, 4) . "<br>";
