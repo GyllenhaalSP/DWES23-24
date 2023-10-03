@@ -4,6 +4,7 @@ require('funciones.php');
  * @var int $suma
  * @var int $resta
  * @var int $multiplicacion
+ * @var callable $esPrimo
  */
 ?>
 
@@ -31,6 +32,10 @@ require('funciones.php');
     echo "3x4 es " . aplicarOperacion($multiplicacion, 3, 4) . "<br>";
     echo invertirCadena($cadena) . "&nbsp;&nbsp;&nbsp;<-- con un for" . "<br>";
     echo invertirCadena2($cadena) . "&nbsp;&nbsp;&nbsp;<-- con strrev" . "<br>";
+
+    echo implode(", ", filtra_array($esPrimo, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 17));
+
+    
     ?>
 </div>
 </body>
