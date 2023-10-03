@@ -47,4 +47,25 @@ function invertirCadena2(string $cadena): string
     return strrev($cadena);
 }
 
+$esPrimo = function (int $numero): bool {
+    if ($numero < 2) {
+        return false;
+    }
+    for ($i = 2; $i < $numero; $i++) {
+        if ($numero % $i === 0) {
+            return false;
+        }
+    }
+    return true;
+};
 
+function filtra_array(callable $esPrimo, ...$numeros): array
+{
+    $resultado = [];
+    foreach ($numeros as $elemento) {
+        if ($esPrimo($elemento)) {
+            $resultado[] = $elemento;
+        }
+    }
+    return $resultado;
+}
