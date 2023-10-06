@@ -20,12 +20,13 @@ function alumnoMasJovenWhile($alumnos): void
     }
 }
 
-function alumnoMasJoven($alumnos): void
+function alumnoMasJoven($alumnos): void /*array reduce*/
 {
-    $alumnosCopia = $alumnos;
-    usort($alumnosCopia, function ($a, $b) {
+    $comparar = function ($a, $b) {
         return $a['edad'] - $b['edad'];
-    });
+    };
+    $alumnosCopia = $alumnos;
+    usort($alumnosCopia, $comparar);
     $alumnoMasJoven = $alumnosCopia[0];
     echo "El alumno más joven es " . $alumnoMasJoven["nombre"] . " con " . $alumnoMasJoven["edad"] . " años.";
 }
