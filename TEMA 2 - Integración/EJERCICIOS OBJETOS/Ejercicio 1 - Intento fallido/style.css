@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 10px;
+}
+
+input {
+    padding: 2px;
+    margin: 3px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    background-color: lightseagreen;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+td {
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
