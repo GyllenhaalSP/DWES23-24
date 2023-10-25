@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
+if (isset($_POST["edad"])) {
+    $edad = $_POST["edad"];
+} else {
+    $edad = 0;
+}
 $nombre = "Daniel Alonso Lázaro";
-$edad = 33;
 $texto = "Hola, me llamo $nombre y tengo $edad años";
 $color = "";
 if ($edad <= 18) {
