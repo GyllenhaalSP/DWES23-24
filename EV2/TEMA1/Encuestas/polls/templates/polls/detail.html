@@ -15,11 +15,11 @@
     <fieldset>
         <legend><h1>{{ question.question_text }}</h1></legend>
         {% if error_message %}
-        <p><strong>{{ error_message }}</strong></p>
+            <p><strong>{{ error_message }}</strong></p>
         {% endif %}
         {% for choice in question.choice_set.all %}
-        <input id="choice{{ forloop.counter }}" name="choice" type="radio" value="{{ choice.id }}">
-        <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+            <input id="choice{{ forloop.counter }}" name="choice" type="radio" value="{{ choice.id }}">
+            <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
         {% endfor %}
     </fieldset>
     <input type="submit" value="Votar">
